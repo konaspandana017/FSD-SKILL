@@ -1,0 +1,2 @@
+This is my first Git project.
+Learning Git version control step by step.
