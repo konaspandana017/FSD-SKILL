@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="course" class="com.klu.springcore_student.Course">
+        <constructor-arg value="Spring Framework"/>
+        <constructor-arg value="6"/>
+    </bean>
+
+    <bean id="student" class="com.klu.springcore_student.Student">
+
+        <constructor-arg value="32836"/>
+        <constructor-arg value="Spandana"/>
+        <constructor-arg value="2026"/>
+
+        <property name="course" ref="course"/>
+        <property name="email" value="spandana@gmail.com"/>
+        <property name="phoneNumber" value="9876543210"/>
+
+    </bean>
+
+</beans>
